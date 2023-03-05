@@ -1,0 +1,846 @@
+                                                                              AWS                                                                                                                                                                             
+If u running a business u required a server to keep operational data also retrieve the data when u needed.
+Hence u would be purchase a physical server and install or the server in ur data center.
+Data center is just a building installed with multiple servers in a rack.
+Cloud provider make sure that these data center operations are completely take and care.
+The server provider is responsible for any criticality involved in the data center management and servers exposed to internet over the public ips and public endpoints.
+These servers accessible over the internet u as a business owner as a customer can access these servers from to the internet.
+Service providers will also ensure 
+•	Data center security
+•	Scaling the computing resources and demand
+•	Maintaining elasticity future if data center computing resources
+•	Maintaining the high availability of ur infrastructure if any hardware failure
+•	Maintain the uptime as per agreement 
+Here only customer responsibility is only install the require software stack on this servers and access this servers from the internet.
+U as a business owner you can only for focus on your business area rather you actually worried about how the data center is being managed.
+Cloud computing: it is the on-demand delivery of it resources over the internet with pay-as-you-go pricing. Instead of buying, owning and maintaining physical data centers and servers u can access technology services such as computing ,storage and database on as needed basis from a cloud provider like aws
+
+
+Cloud services models:
+1.On premises: in this model  customer can manage all resources like applications,data,runtime,middleware,o/s,virtualization,servers,storage,networking. by it’s own.
+
+2. Infrastructure as a Service (IaaS): In this service customer can manage only applications, data, runtime, middleware, o/s. remaining services cloud vender provides to u like virtualization, servers, storage, networking.
+Benefits of IaaS
+IaaS is an efficient and cost-effective way to deploy, operate, and scale your IT infrastructure. It’s easy to set up and configure, so you can start using it quickly. And because it’s available as a service from an external provider, you don’t have to worry about building and maintaining your own infrastructure.  Ex-Virtual Machines or AWS EC2, Storage or Networking
+
+3. Platform As A Service (PaaS): in this services customer can manage only two services like applications and data. Remaining all services like runtime, middleware, o/s, virtualization, servers, storage, networking are take and care by cloud vender.
+Ex- Elastic Beanstalk or Lambda from AWS, WebApps, Functions or Azure SQL DB from Azure, Cloud SQL DB from Google Cloud, or Oracle Database Cloud Service from Oracle Cloud.
+•	PaaS is a cloud service model that gives a ready-to-use development environment where developers can specialize in writing and executing high-quality code to make customized applications.
+•	It helps to create an application quickly without managing the underlying infrastructure. For example, when deploying a web application using PaaS, you don’t have to install an operating system, web server, or even system updates. However, you can scale and add new features to your services.
+
+4. Software As A Service (SaaS): in this model all resources provide by cloud vender.
+Ex- Microsoft Office 365, Oracle ERP/HCM Cloud, SalesForce, Gmail, or Dropbox.
+•	SaaS provides you with a complete product that is run and managed by the service provider.
+•	The software is hosted online and made available to customers on a subscription basis or for purchase in this cloud service model.
+•	With a SaaS offering, you don’t need to worry about how the service is maintained or how the underlying infrastructure is managed. It would help if you believed how you’d use that specific software.
+
+Cloud Deployment Models:
+1.	Public Cloud: offsite infrastructure manage by service provider
+Ex: aws,azure,gcp
+The public cloud makes it possible for anybody to access systems and services.. The public cloud is one in which cloud infrastructure services are provided over the internet to the general people or major industry groups. The infrastructure in this cloud model is owned by the entity that delivers the cloud services, not by the consumer
+Public Cloud is an IT model where on-demand computing services and infrastructure are managed by a third-party provider and shared with multiple organizations using the public Internet. Public cloud service providers may offer cloud-based services such as infrastructure as a service (IaaS), platform as a service (PaaS), or software as a service (Saas) to users for either a monthly or pay-per-use fee, eliminating the need for users to host these services on site in their own data center. 
+Advantages of the public cloud model:
+Minimal Investment: Because it is a pay-per-use service, there is no substantial upfront fee  No setup cost: No maintenance: Dynamic Scalability:  
+
+2. Private Cloud: offsite/onsite infrastructure manage by you
+The private cloud deployment model is the exact opposite of the public cloud deployment model. It’s a one-on-one environment for a single user (customer). There is no need to share your hardware with anyone else. 
+it refers to the ability to access systems and services within a given border or organization
+ex: century link cloud, ibm cloud, oracle cloud
+Advantages of the private cloud model:
+Better Control: You are the sole owner of the property.
+Data Security and Privacy: It’s suitable for storing corporate information to which only authorized staff have access
+
+3.  Hybrid cloud : application and data are in a combination of private and public cloud.
+Ex: applications in aws, database in century link cloud
+hybrid cloud computing gives the best of both worlds. With a hybrid solution, you may host the app in a safe environment while taking advantage of the public cloud’s cost savings. Organizations can move data and applications between different clouds using a combination of two or more cloud deployment methods, depending on their needs. 
+•	Flexibility and control: Businesses with more flexibility can design personalized solutions that meet their particular needs.
+•	Cost: Because public clouds provide for scalability, you’ll only be responsible for paying for the extra capacity if you require it.
+Security: Because data is properly separated, the chances of data theft by attackers are considerably reduced. 
+Define and explain the three basic types of cloud services and the AWS products that are built based on them?
+The three basic types of cloud services are:
+1.Computing 2.Storage  3.Networking
+Computing - These include EC2, Elastic Beanstalk, Lambda, Auto-Scaling, and Light sat.
+Storage - These include S3, Glacier, Elastic Block Storage, Elastic File System, AmazonS3 Glacier
+Networking - These include VPC, Amazon Cloud Front, Route53, AmazonAPI Gateway.
+Management & Governance: AWS Account Management, AWS
+Cloud Formation, Cloud Watch, Management Console.
+
+2. What is the relation between the Availability Zone and Region?
+
+AWS regions(25) are separate geographical areas, like the US-West 1 (North California) and Asia South (Mumbai). On the other hand, availability zones [81]are the areas that are present inside the regions. These are generally isolated zones that can replicate themselves whenever required.
+
+15. Name some of the AWS services that are not region-specific
+AWS services that are not region-specific are:
+•	IAM
+•	Route 53
+•	Web Application Firewall 
+•	CloudFront
+
+19. What is Amazon EC2?
+EC2 is short for Elastic Compute Cloud .it provides scalable computing capacity and eliminates the need to invest in hardware . 
+You can use Amazon EC2 to launch as many or as few virtual servers as needed, configure security and networking, and manage storage. It can scale up or down to handle changes in requirements, reducing the need to forecast traffic.
+EC2 is a virtual machine that represents a physical server for you to deploy your applications. Instead of purchasing your own hardware and connecting it to a network, Amazon gives you nearly unlimited virtual machines to run your applications while they take care of the hardware.
+ EC2 provides virtual computing environments called “instances.” 
+a Virtual Machine in the cloud on which you have OS-level control. You can run this cloud server whenever you want and can be used when you need to deploy your own servers in the cloud, similar to your on-premises servers, and when you want to have full control over the choice of hardware and the updates on the machine
+. 
+HOW TO CREATE EC2 INSTANCE
+From the Amazon EC2 console dashboard, choose Launch instance.
+1.	Step 1: Choose an Amazon Machine Image (AMI) ... it is a template that contains the software configuration like amzn linux,Ubuntu,centos,macos,redhat,suse
+2.	Step 2: Choose an Instance Type. ...like t2.micro,t2.large,t3.micro,a1.large,c1 large,xle.32xlarge,gpu…
+3.	Step 3: Configure Instance Details. ...like no if instance ,subnet..
+4.	Step 4: Add Storage. ...
+5.	Step 5: Add Tags. ...
+6.	Step 6: Configure Security Group. ...inbound rule
+7.	Step 7: Review Instance Launch and Select Key Pair
+How To Connect To Your Amazon Ec2 Instance?
+Following are the steps to connect to a Linux instance:
+•	Install PuTTY on your local machine.
+•	Get your instance ID.
+•	Get the public DNS name of the instance.
+•	Locate the private key.
+•	Enable inbound SSH traffic from your IP address to your instance.
+•	Converting Your Private Key Using PuTTYgen.
+•	Starting a PuTTY Session.
+•	Now you are connected to your EC2 instance.
+
+23. What are the different types of EC2 instances based on their costs?
+The three types of EC2 instances are:
+On-demand Instance It is default option in AWS EC2
+There is no agreement or commitment with AWS
+* With On-Demand instances, you pay for compute capacity by the hour or the second depending on which instances you run,
+No upfront payments are needed
+* You can increase or decrease your compute capacity depending on the demands of your application and only pay the specified per  hourly rates for the instance you use
+On-Demand instances are recommended for:
+
+* Users that prefer the low cost and flexibility of Amazon EC2 without any up-front payment or long-term commitment
+
+* Applications with short-term, spiky, or unpredictable workloads that cannot be interrupted
+
+* Applications being developed or tested on Amazon EC2 for the first time
+Spot Instance
+It is less expensive than the on-demand instance and can be bought through bidding. 
+Amazon EC2 Spot instances allow you to request spare Amazon EC2 computing capacity for up to 90% off the On-Demand price
+* There is no speed and performance guarantee from AWS
+* If unused instance available then AWS provide offer to customer/users
+* Based on biding:
+    AWS price: $0.0043 /h
+    Your Max:  $1 /h
+Reserved Instance
+If you are planning to use an instance for a year or more, then this is the right one for you.
+There is agreement or commitment with AWS
+* 1 year / 3 years agreement or commitment with AWS
+* Pricing: 
+   - No upfront
+   - Partially upfront
+   - All upfront
+Standard: You and Your company can change instance type after purchase VM
+          t2.micro --> 6 months --> t2.large
+Convertible: You and Your company can change individual resource after purchase VM
+             1 GB RAM --> 2 Months --> 4 GB RAM
+             30 GB EBS --> 3 Months --> 500 GB EBS
+What is auto-scaling?
+Auto-scaling is a function that allows you to provision and launch new instances whenever there is a demand. It allows you to automatically increase or decrease resource capacity in relation to the demand.
+
+. What is CloudWatch?
+The Amazon CloudWatch has the following features:
+•	Depending on multiple metrics, it participates in triggering alarms.
+•	Helps in monitoring the AWS environments like CPU utilization, EC2, Amazon RDS instances, Amazon SQS, S3, Load Balancer, SNS, etc.
+
+
+
+Explain what T2 instances are?
+The T2 Instances are intended to give the ability to burst to a higher performance whenever the workload demands it and also provide a moderate baseline performance to the CPU.
+The T2 instances are General Purpose instance types and are low in cost as well. They are usually used wherever workloads do not consistently or often use the CPU
+
+
+20. What Are Some of the Security Best Practices for Amazon EC2?
+Security best practices for Amazon EC2 include using Identity and Access Management (IAM) to control access to AWS resources; restricting access by only allowing trusted hosts or networks to access ports on an instance; only opening up those permissions you require, and disabling password-based logins for instances launched from your AMI.
+22. What is the difference between stopping and terminating an EC2 instance? 
+While you may think that both stopping and terminating are the same, there is a difference. When you stop an EC2 instance, it performs a normal shutdown on the instance and moves to a stopped state. However, when you terminate the instance, it is transferred to a stopped state, and the EBS volumes attached to it are deleted and can never be recovered. 
+8.	Is it possible to vertically scale on an Amazon Instance?  If yes, how ?
+Following are the steps to scale an Amazon Instance vertically –
+•	Spin up a larger Amazon instance than the existing one.
+•	Pause the exisiting instance to remove the root ebs volume from the server  and discard.
+•	Stop the live running instance and detach its root volume.
+•	Make a note of the unique device ID and attach that root volume to the new server.
+Start the instance again
+26. How do you configure CloudWatch to recover an EC2 instance?
+Here’s how you can configure them:
+•	Create an Alarm using Amazon CloudWatch
+•	In the Alarm, go to Define Alarm -> Actions tab
+•	Choose Recover this instance option
+28. What are Key-Pairs in AWS?
+The Key-Pairs are password-protected login credentials for the Virtual Machines that are used to prove our identity while connecting the Amazon EC2 instances. The Key-Pairs are made up of a Private Key and a Public Key which lets us connect to the instances.
+27. What are the common types of AMI designs?
+There are many types of AMIs, but some of the common AMIs are:
+•	Fully Baked AMI
+•	Just Enough Baked AMI (JeOS AMI)
+•	Hybrid AMI
+
+Recovering private key if it is deleted
+Private key is in your local system
+Public key is in ur vm-- # cd /home/ec2-user/.ssh/authorized_keys
+
+Ec2 instance = original (forgten key)
+Stop the original instance----go to volume-detech the volume of original instance
+Now create new vm ec2 instance  
+Go to volumesselect the original instance volume -attch that volume to recovery instance..
+Putty login the recovery instancegoto root previlges-#lsblk ( here shows the second volume is original instance volume- #mkdir /mnt/recovery- # mount –o nouuid /dev/xvdf1 /mnt/recovery/ (second volume is mounted on this )--#cp /home/ec2-user/..ssh/authorized_keys  /mnt/recovery/home/ ec2-user/..ssh/authorized_keys  ( the public key of recovery instance is copied into second volume )----- #umount /mnt/recovery/ ( second was unmounted successfully)..
+Goto aws -select recory instancestop it goto volumes-detch the original volume
+Select original volume attch to original instance    at device - /dev/xvda-attch
+Now u can start ur original instance using the key of recorey key –ur successfully login in it
+21. Can S3 Be Used with EC2 Instances, and If Yes, How?
+Amazon S3 can be used for instances with root devices backed by local instance storage. That way, developers have access to the same highly scalable, reliable, fast, inexpensive data storage infrastructure that Amazon uses to run its own global network of websites. To execute systems in the Amazon EC2 environment, developers load Amazon Machine Images (AMIs) into Amazon S3 and then move them between Amazon S3 and Amazon EC2.
+Amazon EC2 and Amazon S3 are two of the best-known web services that make up AWS
+What is Cloud Storage?
+Cloud storage is a web service where your data can be stored, accessed, and quickly backed up by users on the internet. It is more reliable, scalable, and secure than traditional on-premises storage systems. 
+Cloud storage is offered in two models: 
+1.	Pay only for what you use
+2.	Pay on a monthly basis
+
+S3 storage
+
+
+ What is s3 ?
+Amazon S3 (Simple Storage Service) provides object storage, which is built for storing and recovering any amount of information or data from anywhere over the internet. It provides this storage through a web services interface. While designed for developers for easier web-scale computing, it provides 99.999999999 percent durability and 99.99 percent availability of objects. It can also store computer files up to 5 terabytes in size.
+Benfits of s3: Durability, Low cost, Scalability, Availability, Flexibility, Simple data transfer,
+What is S3 bucket ?
+A bucket is used to store objects. When data is added to a bucket, Amazon S3 creates a unique version ID and allocates it to the object.
+A bucket in AWS Simple Storage Service (S3) is a public object storage service such as file folders, which store objects containing data and descriptive metadata.
+What do you understand by Versioning in S3?
+S3 buckets support the feature of versioning. The bucket’s versioning is enabled globally. Versioning allows one to track various changes made to a file over time. If versioning is enabled, each uploaded file receives a unique Version ID. Consider a bucket that contains a file, and a user uploads a new modified copy of the same file to the bucket; both files had a unique Version ID and timestamps from when they were uploaded. So, if one needs to go back in time to an earlier state of the file, versioning makes it simple.
+32. How do you allow a user to gain access to a specific bucket?
+You need to follow the four steps provided below to allow access. They are:
+1.	Categorize your instances
+2.	Define how authorized users can manage specific servers.
+3.	Lockdown your tags
+4.	Attach your policies to IAM users
+What are the Storage Classes available in Amazon S3?
+The Storage Classes that are available in the Amazon S3 are the following:
+•	Amazon S3 Glacier Instant Retrieval storage class
+•	Amazon S3 Glacier Flexible Retrieval (Formerly S3 Glacier) storage class
+•	Amazon S3 Glacier Deep Archive (S3 Glacier Deep Archive)
+•	S3 Outposts storage class
+•	Amazon S3 Standard-Infrequent Access (S3 Standard-IA)
+•	Amazon S3 One Zone-Infrequent Access (S3 One Zone-IA)
+•	Amazon S3 Standard (S3 Standard)
+•	Amazon S3 Reduced Redundancy Storage
+•	Amazon S3 Intelligent-Tiring (S3 Intelligent-Tiering)
+
+Amazon Elastic Block Store (EBS) is a block storage system used to store persistent data. Amazon EBS is suitable for EC2 instances by providing highly available block level storage volumes. It has three types of volume, i.e. General Purpose (SSD), Provisioned IOPS (SSD), and Magnetic. These three volume types differ in performance, characteristics, and cost.
+EBS General Purpose (SSD)
+This volume type is suitable for small and medium workloads like Root disk EC2 volumes, small and medium database workloads, frequently logs accessing workloads, etc. By default, SSD supports 3 IOPS (Input Output Operations per Second)/GB means 1 GB volume will give 3 IOPS, and 10 GB volume will give 30 IOPS. Its storage capacity of one volume ranges from 1 GB to 1 TB. The cost of one volume is $0.10 per GB for one month.
+Provisioned IOPS (SSD)
+This volume type is suitable for the most demanding I/O intensive, transactional workloads and large relational, EMR and Hadoop workloads, etc. By default, IOPS SSD supports 30 IOPS/GB means 10GB volume will give 300 IOPS. Its storage capacity of one volume ranges from 10GB to 1TB. The cost of one volume is $0.125 per GB for one month for provisioned storage and $0.10 per provisioned IOPS for one month.
+EBS Magnetic Volumes
+It was formerly known as standard volumes. This volume type is suitable for ideal workloads like infrequently accessing data, i.e. data backups for recovery, logs storage, etc. Its storage capacity of one volume ranges from 10GB to 1TB. The cost of one volume is $0.05 per GB for one month for provisioned storage and $0. 05 per million I/O requests.
+How to Set Up Amazon EBS?
+Step 1 − Create Amazon EBS volume using the following steps.
+•	Open the Amazon EC2 console.
+•	Select the region in the navigation bar where the volume is to be created.
+•	In the navigation pane, select Volumes, then select Create Volume.
+•	Provide the required information like Volume Type list, Size, IOPS, Availability zone, etc. then click the Create button.
+ 
+The volume names can be seen in the volumes list.
+ 
+Step 2 − Store EBS Volume from a snapshot using the following steps.
+•	Repeat the above 1 to 4 steps to create volume.
+•	Type snapshot ID in the Snapshot ID field from which the volume is to be restored and select it from the list of suggested options.
+•	If there is requirement for more storage, change the storage size in the Size field.
+•	Select the Yes Create button.
+Step 3 − Attach EBS Volume to an Instance using the following steps.
+•	Open the Amazon EC2 console.
+•	Select Volumes in the navigation pane. Choose a volume and click the Attach Volume option.
+ 
+•	An Attach Volume dialog box will open. Enter the name/ID of instance to attach the volume in the Instance field or select it from the list of suggestion options.
+•	Click the Attach button.
+ 
+•	Connect to instance and make the volume available.
+Step 4 − Detach a volume from Instance.
+•	First, use the command /dev/sdh in cmd to unmount the device.
+•	Open the Amazon EC2 console.
+•	In the navigation pane, select the Volumes option.
+•	Choose a volume and click the Detach Volumes option.
+ 
+•	A confirmation dialog box opens. Click the Yes, Detach button to confirm.
+Common EBS OperationsWe’ll cover the following common operations:
+Creating a new EBS volumeAttaching an EBS volume to an EC2 instanceCreating a snapshot from an EBS volumeCopying EBS volumes between regions
+
+4. Copying EBS Volumes Between RegionsAmazon EBS feature Elastic Volumes allows AWS customers to easily switch between Amazon EBS volume types on the fly and dynamically grow volume sizes.To copy an EBS volume between regions using the AWS Management Console:1. Create an EBS Volume (as shown above)2. Attach the volume to an EC2 Instance (as shown above)3. Create a snapshot (as shown above)4. Once the snapshot is created, move it to the other region. In the Elastic Block Storage subsection in the “EC2 Dashboard” menu, select “Snapshots.” Find the desired snapshot, and select “Copy.”
+Pop-up for copying Snapshot creation
+
+5. Select “Destination Region,” as well as the option to encrypt the new snapshot. In order to utilize the new snapshot in the destination region, change the region in the top right corner of AWS Management Console.To copy an EBS volume to another region using the AWS CLI:1. Configure the environment.2. Create the volume using the CLI command aws ec2 create-volume - important arguments are --size, --region, --availability-zone, --volume-type, --iops (when creating SSD volumes) and --encrypted (if securing the data is important).3. Attach it with the command aws ec2 attach-volume -supply --volume-id and --instance-id arguments).4. Create a snapshot with the command aws ec2 create-snapshot with argument --volume-id.5. Move the snapshot with the command aws ec2 copy-snapshot. Provide the parameters --source-region, --source-snapshot-id, --destination-region (optional, but necessary for cross-region copying), --encrypted.
+Increasing Amazon EBS Volume Size While in Use
+Amazon EBS is elastic, which means you can modify the size, IOPS, and the types of volume on the go without difficulty.
+To modify the instance size, it is required to stop the instance, take a snapshot of the volume, create a new volume, and attach it.
+Amazon CloudWatch Events for Amazon EBS
+AWS automatically provides data such as instance metrics and volume status checks via Amazon CloudWatch. These are state notifications and can be used to monitor Amazon EBS volumes.
+Typically, monitoring data is available on Amazon CloudWatch in five-minute periods at no additional charge. Amazon CloudWatch also provides a monitoring option with for PIOPS (Provisioned IOPS) instance types such as io1; data for such instance types are available on Amazon CloudWatch at every one minute, accessible via Amazon CloudWatch API or the Amazon EC2 console, which is part of the AWS management console.
+A user can always configure Amazon CloudWatch alarms to trigger an SNS notification based on a state change. In addition to this, Amazon CloudWatch Events allow a user to configure Amazon EBS to emit notifications whenever a snapshot or encryption state has a status change. Users can also use Amazon CloudWatch Events to establish rules that trigger programmatic actions in response to changes in the snapshot or encryption key states.
+In a use case scenario, Customer XYZ wants to ensure whenever a snapshot is created, the snapshot is shared with another account or copied to another region for disaster-recovery purposes. A possible solution is for Customer XYZ to leverage Amazon CloudWatch to establish rules that trigger programmatic actions in response to a change in snapshot or encryption.
+Amazon CloudWatch’s CopySnapshot feature, the event is sent to Customer XYZ’s AWS account when an action to copy a snapshot completes. If either event succeeded then it should trigger an Amazon Lambda function which will automatically copy the snapshot from one specified region to another.
+Refer following documentation to see a step-by-step guide for implementing triggers on Amazon CloudWatch Events feature
+                                                             VPC
+Your vpc –Amazon VPC enables you to build a virtual network in the AWS cloud - no VPNs, hardware, or physical datacenters required. You can define your own network space, and control how your network and the Amazon EC2 resources inside your network are exposed to the Internet
+Your vpc create vpcgive name to vpcenter ipv4cidr  ( 192.168.0.0/16 )
+Subnets- subnets are a logical partition of an IP network into multiple, smaller network segments. The Internet Protocol (IP) is the method for sending data from one computer to another over the internet
+
+The instances in the public subnet can send outbound traffic directly to the internet, whereas the instances in the private subnet can't. Instead, the instances in the private subnet can access the internet by using a network address translation (NAT) gateway that resides in the public subnet.
+
+A private subnet sets that route to a NAT instance. Private subnet instances only need a private ip and internet traffic is routed through the NAT in the public subnet. You could also have no route to 0.0.0.0/0 to make it a truly private subnet with no internet access in or out.
+
+A public subnet routes 0.0.0.0/0 through an Internet Gateway (igw). Instances in a public subnet require public IPs to talk to the internet.
+Why Public Subnet The resources in the public subnet can send outbound traffic directly to the Internet and vice versa. For example web server needs to be accessed by users from the internet.   
+Why Private Subnet Resources like database may require connection to internet for updates/patches but should not be accepting request from the internet. In such cases a private subnet is to be used.
+
+subnet-create subnetselect ur craetedvpcenter subnet name(public/private) ipv4cidr  ( 192.168.1.0/24 )
+subnets-create subnetselect ur craetedvpcenter subnet name(public/private) ipv4cidr  ( 192.168.2.0/24 ( here not same to the above ip)
+
+internet gateway:An Internet gateway can transfer communications between an enterprise network and the Internet
+
+local gateway- serves two purposes. It provides a target in your VPC route tables for on-premises destined traffic, and it performs network address translation (NAT) for instances that have been assigned addresses from your customer-owned IP pool. NAT Gateway
+
+NAT Gateway (NGW) is a managed Network Address Translation (NAT) service.
+NAT Gateway does something similar to Internet Gateway (IGW), but it only works one way: Instances in a private subnet can connect to services outside your VPC but external services cannot initiate a connection with those instances.
+NAT gateways are supported for IPv4 or IPv6 traffic.
+NAT gateway supports the following protocols: TCP, UDP, and ICMP.
+Each NAT gateway is created in a specific Availability Zone and implemented with redundancy in that zone.create internet gatewayenter name-create- ( after creation of gateway,,,that gateway attach to your vpc…..
+
+Route table: A routing table contains the information necessary to forward a packet along the best path toward its destination. Each packet contains information about its origin and destination. Routing Table provides the device with instructions for sending the packet to the next hop on its route across the network
+Route tablecreatename with publicselect vpccreate route table
+Route table:createname with  privateselect vpccreate route table
+To attach route table to subnets (public and private) - select routeactions-edit subnet assoctionsselect subnetsave association
+To attach route table to subnets (public and private) - select routeactions-edit subnet assoctionsselect subnetsave association
+Route tableselect  public routeedit routeadd route-destination  0.0.0.0/0target (ex-internet gateway)-save changes
+What are Security Groups in VPC?
+A security group functions as a virtual firewall for your instance to control inbound and outbound traffic. To launch an instance in a VPC, it can assign up to five security groups to the instance. Security groups act at the instance level, not the subnet level. As a result, each instance in a subnet in your VPC can be assigned to a different set of security groups.
+If want to launch an instance using the Amazon EC2 API or a command line tool and no need to specify a security group, the instance is automatically assigned to the default security group for the VPC.
+If want to launch an instance using the Amazon EC2 console, we have an option to create a new security group for the instance.
+
+====================================================================================================================================================================
+====================================================================================================================================================================
+
+
+===INSTALL AND CONFIGURE OF HTTPD===== for html code run
+Hypertext Transfer Protocol (HTTP) is an application-layer protocol for transmitting hypermedia documents, such as HTML. It was designed for communication between web browsers and web servers, but it can also be used for other purposes
+Open ur putty -- #yum install httpd –y --download httpd in ur server- # cd /var/www/html  (htpd dir)
+# cd  /var/www/html - vi index.html (write html code inthis file only)then start httpd service # service httpd start-once check the status of httpd #service htttpd status--then open ur amzon console and copy the instance public id -this  serach in googlehere open ur html server
+=================================================================================                                                       
+
+
+Ssh authentication (password less)
+     Ec2 instance reddi  and     Ec2 instance prasad…. You want connect to prasad through the reddi 
+In reddi u will create ssh keys # ssh –keygen -> here created pub and private keys generated in .ssh folder
+#Cd .ssh  # cat id_rsa.pub  copy this pub key into prasad server in #.ssh # vi authorized_keys # chmod 600  authorized_keys # cd # chmod 700 .ssh
+Goto reddi # ssh –i .pem ec2-user@pub of ip of prasad    /or/  #ssh ec2-user@pub of ip of prasad
+                                                                 RECOVERY PRIVATE KEY
+@Private key is in your local system
+@Public key is in ur vm-- # cd /home/ec2-user/ssh/authorized_keys
+
+Ec2 instance1 = original (forgten key)
+Ec2 instance2= recovery 
+Stop the original instance----go to volume-detech the volume of original instance 
+Go to volumesselect the original instance volume -attch that volume to recovery instance..
+Putty login the recovery instancegoto root previlges-#lsblk ( here shows the second volume is original instance volume- #mkdir /mnt/recovery- # mount –o nouuid /dev/xvdf1 /mnt/recovery/ (second volume is mounted on this )df –h (here shows ur second vlme as /mnt/recovery)
+#cp /home/ec2-user/..ssh/authorized_keys  /mnt/recovery/home/ ec2-user/..ssh/authorized_keys  ( the public key of recovery instance is copied into second volume )----- #umount /mnt/recovery/ ( second was unmounted successfully)..
+Goto aws -select recory instancestop it goto volumes-detch the original volume
+Select original volume attch to original instance    at device - /dev/xvda-attch
+Now u can start ur original instance using the key of recorey key –ur successfully login in it
+
+                                                             OR
+
+Through script
+Goto aws--stop the instance original instance 
+Goto puttylogin through duplicate instance goto roots previliges- # more /home/ec2-user/.ssh/authorized_keys --copy this text
+Script
+Content-Type: multipart/mixed; boundary="//" 
+MIME-Version: 1.0
+
+--//
+Content-Type: text/cloud-config; charset="us-ascii"
+MIME-Version: 1.0 
+Content-Transfer-Encoding: 7bit
+Content-Disposition: attachment; filename="cloud.config.txt"
+
+#cloud-config 
+cloud_final_modules:
+- [scripts-user, always]
+--//
+Content-Type: text/x-shellscript; charset="us-ascii" 
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+Content-Disposition: attachment; filename="userdata.txt"
+#!/bin/bash
+/bin/echo -e "here add private key duplicate server" >> /home/ec2-user/.ssh/authorized_keys
+--//
+Goto aws-select original instance -actionsgoto instance settings--edit user datacopy this  script data-- save
+Start original instancegoto putty and login through duplicate server key….
+
+
+===INSTALL AND CONFIGURATION APCHE TOMCAT==== for java code
+apache Tomcat is a popular open source web server and Servlet container for Java code
+Open instance in putty----open google-serach apache tomcat-https://tomcat.apache.org/-download--select your tomcat version(tomcat 9)-- Binary Distributions-64-bit windows zip-give right click to ur mouse the copy link address---
+Now open your putty--- cmnd: wget https://dlcdn.apache.org/tomcat/tomcat-9/v9.0.63/bin/apache-tomcat-9.0.63-windows-x64.zip [here copy ur link--->press enter- $ls--  here shows ur tomcat zip file[[apache-tomcat-9.0.63-windows-x64.zip]]--- $ unzip apache-tomcat-9.0.63-windows-x64.zip--- $ls--- here shows ur apache tomcat [[apache-tomcat-9.0.63]]]----apch-tomcat insattled
+$ cd apache-tomcat-9.0.63--$ cd bin-- $ lshere shows all tomcat scripts like( startup.bat shutdown.sh)) $chmod  +x ./* (give excute permissions to all scripts)-
+If u want start apche tomcat go to bin directory in that - $ ./startup.sh
+If u want to stop apche tomcat go to bin directory in that - $ ./shutdown.sh
+---------------now install the java in ur instance…………….>
+$ yum install java ---{ for root user}
+$ sudo yum install java---{ for ec2-user}
+If u want remove java =
+$ yum remove java* [for root user]
+$ sudo yum java* [ for ec2-user]
+Add the port for apache tomcat 
+Open ur amzon console-select ur instance-security-security groups---actions-edit inbound rules-add rule--port range give 8080-custom give 0.0.00./0save rules
+Now start ur apche tomcat $cd apache-tomcat-9.0.63-cd bin- $ ./startup.sh
+Go to ur chrome-paste ur insatance public and port number (3.92.147.209:8080)--open ur apche tomcat in chrome
+How to check port avalibility=netstat-tupln
+Add war file to apche-tomcat
+Clone the war file from github/bitbucket--exmple
+ $get  https://github.com/AKSarav/SampleWebApp/raw/master/dist/SampleWebApp.war---> this war file copy to $cd apache-tomcat-9.0.63/webapps- now stop the apche tomcat and start apache tomcat
+Go to chrome  ur instance public ip and port number and war file name 
+[3.92.147.209:8080/samplewebwar/] then open ur gui of ur website as per code
+
+======INSTALL AND CONFGURATION OF MAVEN=====
+Open google-search apache maven [https://maven.apache.org/download.cgi]-----download-------select binary apchemaven zip file then give mouse right click copy link address [https://dlcdn.apache.org/maven/maven-3/3.8.5/binaries/apache-maven-3.8.5-bin.zip]-----open ur putty - cmnd= $wget https://dlcdn.apache.org/maven/maven-3/3.8.5/binaries/apache-maven-3.8.5-bin.zip---> maven zip file [apache-maven-3.8.5-bin.zip]- unzip the maven $unzip apache-maven-3.8.5-bin.zip-$ls-apache-maven-3.8.5------------sucessfully installed maven
+Must install Install git and java
+$yum install java
+$yum install git
+=====How change normal file[s] to war file===
+Download the source code  files[s] from  devopsrealtime.commorecode-bit bucket-select code and clik on that-clonecopy that clone url-open ur putty-cpy this url and entercopied ur source code file
+ ((git clone https://reddiprasad72@bitbucket.org/dptrealtime/java-login-app.git)))---> java-login-app 9[source code file]--  $cd java-login-app-- $ /root/apache-maven-3.8.5/bin/mvn package--$ls—here add target - $cd target- $ls – here shows ur war file
+==================================================================================
+
+====INSTALL AND CONFIGURATION OF NGINX===== ngnix reverse proxy
+do all this in root user only=
+Open ur instance in putty- $amazon-linux-extrashere shows the amzon packs -38.nginx1$ amazon-linux-extras install nginx1 –y ---installing nginx
+$cd /etc/nginx--$ls-here shows nginx files-$netstat-tupln [for port checking]-nginx defult port number is 80--
+Giving port to nginx by manually- Open ur amzon console-select ur instance-security-security groups---actions-edit inbound rules-add rule--port range give 80-custom give 0.0.00./0save rules
+Goto putty-$start nginx.service --$service nginx status [here active]---check again port$netstat –tupln [here port 80 for nginx]--
+$ cd etc/nginx- $vi nginx.conf---edit the file at include line under this ---add like this---- location  / {
+Proxy_pass and ur tomcat ip address and port number and war file name [ proxy_pass http://54.208.125.657:8080/SampleWebApp/ ] press enter close the }--save this edits of vi nginx.conf-----$ service nginx restart--goto amzon console account-select nginx instance copy public of this instanceopen google copy the public ip--here open ur webwar file……….
+                                                                            JENKINS 
+Create 2 servers,,, 1 for apache tomcat,,,, 2 for apache maven and Jenkins
+Don’t install both apache tomcat and Jenkins in single server  beacause both have same ports numbers 8080. Skip the port conflicts
+Go to ur putty and connect ur maven&Jenkins server------- install java--- $amazon-linux-extras install java-openjdk11-----install apach maven----$ wget https://dlcdn.apache.org/maven/maven-3/3.8.5/binaries/apache-maven-3.8.5-bin.zip-------> $unzip Apache-Maven-3.8.5-zip ------$yum install git--go to bit bucket and clone source code repo $git clone http://Prasadreddi@bitbucket.org/prasadreddi/pract.git-----> java-login-app folder downloaded-----build war file through maven--- $cd  java-login-app ---$/opt/ Apache-Maven-3.8.5/bin/mvn package -- war file builded---
+Find the java path  $find /usr/lib/jvm/java-11* | head -n 3
+ Here shows top 3 java paths ---select last  --- /usr/lib/jvm/java-11-openjdk-11.0.13.0.8-1.amzn2.0.3.x86_64
+Give the home path of java and maven in /.bash_profile
+#vi ~/.bash_profile
+JAVA_HOME=/usr/lib/jvm/java-11-openjdk-11.0.13.0.8-1.amzn2.0.3.x86_64
+M2_HOME=/opt/maven
+M2=/opt/maven/bin
+PATH=$PATH:$HOME/bin:$JAVA_HOME:$M2:$M2_HOME
+export PATH
+next install Jenkins packages----$ wget -O /etc/yum.repos.d/jenkins.repo https://pkg.jenkins.io/redhat-stable/jenkins.repo ----> $ rpm --import https://pkg.jenkins.io/redhat-stable/jenkins.io.key --> $ yum install Jenkins --$service start Jenkins----wait few seconds when sceen shows ok --- $ cd /var/lib-here shows zenkins folder- $cd Jenkins-- 
+#systemctl enable Jenkins OR chkconfig jenkins on ( for always on Jenkins)
+Go to instance-select jenkins instance-securityedit inbound rules-add port 8080
+now copy the instance public ip:8080and search in google--open your Jenkins login page-enter ur Jenkins passwordjenkins password is keep in $ cd /var/lib/Jenkins/secrets- $cat intialadminpassword- here shows password  .copy it paste in Jenkins login page-
+ here open ur Jenkins- click on install suggested plugins-click on skip---- save and finish--start using Jenkins--manage Jenkins--manage credentials-global--add credentials--user name [here give ur bitbucket user name]---password [give bit bucket password]---id [bit-bucket]--description [bitt bucket credentials]- ok-
+-dashboardnew itementer item name[maven build]-click on free style-ok-source code management-select.git-pastebitbucketurl-- http://Prasadreddi@bitbucket.org/prasadreddi/pract.git---->credentilas select bit credentials by drop down-build-add build step-excute shellcommand-/opt/ Apache-Maven-3.8.5/bin/mvn package--save..--build now---here buildindg start war 
+
+Log in to putty through tomcat -- $amazon-linux-extras install java-openjdk11-- $wget https://dlcdn.apache.org/tomcat/tomcat-8/v8.5.79/bin/apache-tomcat-8.5.79-windows-x64.zip ---> $unzip apache-tomcat-8.5.79 ----> $cd /opt/ apache-tomcat-8.5.79/bin - $chmod +x ./* -./startup.sh
+  $cd ../  $cd webapps - $cd manager  $cd META-INF  $ vi context.xml delete last  from 2-7 lines   and keep it these lines (<Context antiResourceLocking="false" privileged="true" >
+</Context>)- $cd ../../  -
+ $ cd host-manager - cd META-INF- $ vi context.xml- delete last  from 2-7 lines and keep it these lines (<Context antiResourceLocking="false" privileged="true" >
+</Context>-- 
+$cd  $ cd /opt/ apache-tomcat-8.5.79/bin  $cd conf  $cd tomcat-user.xml--remove the comment [--> and <!--] delete last 2 nd 3 lines- and
+ <role rolename="admin-gui"/>
+  <role rolename="manager-gui"/>
+  <role rolename="manager-script"/>
+  <user username="tomcat" password="123456" roles="admin-gui,manager-gui,manager-script"/>” -save the script
+copy the tomcat server ip and serach in google-tomcat opened-click on manger enterlogin credentls  prasad and password 123456
+ Now go to jenkin portal  manage Jenkins-- manage plugins- click o avilabe - and search “deploy”select artitact uploaders- click on with out restart install -- manage Jenkins-- manage plugins- click o available-and search “copy”-build parametrs and build tools- click on with out restart install
+dashboard- manage Jenkins--manage credentials-global--add credentials--user name [here give ur tomcat user name (prasad)]---password [give tomcat password (123456)]---id [tomcat]--description [tomcat credentials]- ok-
+-go to dashboard-maven buildconfigurepost build actionsarchive the artifctsenter target/*.war save
+ dashboardnew itementer item name[tomcat deploy]-click on free style-ok
+
+-- select build copy artifact from another project project name=maven build post-build actions deploy war/ear to a container- enter  **/*.war--- containers--<select  tomcat8. Remote select ur tomcat credentials by drop down  tomcat url (http://tomcatip:8080/  - save
+Dashboard - select maven build- click on build  here build process start green signal build cmplted
+
+Dashboard--select tomcat build now- here build process start green signal build cmplted
+=Let’s check ur tomcat server getting war file or not
+Go to tomcat server - $cd /opt/ apache-tomcat-8.5.79/webapps- $ls-here shows ur war file (dptweb-1.0.war)
+Then go to google  http://tomcatip:8080/  dptweb-1.0/- open ur project website
+= if u want automatically tomcat deploy it means when ur maven build cmltd then automatically starts tomcat deploy
+-go to dashboard-maven buildconfigurepost build actionsbuild other projects  projects buildenter tomcat deploysave
+Dashboard - select maven build- click on build  here build process start green signal build cmplted
+Then goto  Dashboard--select tomcat u can see here auomatically build process start……… =====successsss======practical
+
+
+
+=====================================================================================
+                                                          VPC
+
+PRIVATE IP ADDRESS RANGES (universly indentified private ip’s ) ;- There are millions of private networks across the globe, all of which include devices assigned private IP addresses within these ranges:
+Class A:  10.0.0.0-10.255.255.255
+classB: 172.16.0.0 – 17.31.255.255	
+class C: 192.168.0.0 – 192.168.255.255 these are private ip’s reaminig all public ips
+A public IP address identifies you to the wider internet so that all the information you’re searching for can find you. A private IP address is used within a private network to connect securely to other devices within that same network.
+Public IP address	Private IP address
+External (global) reach	Internal (local) reach
+Used for communicating outside your private network, over the internet	Used for communicating within your private network, with other devices in your home or office
+A unique numeric code never reused by other devices	A non-unique numeric code that may be reused by other devices in other private networks
+Found by Googling: "What is my IP address?"	Found via your device’s internal settings
+Assigned and controlled by your internet service provider	Assigned to your specific device within a private network
+Not free	Free
+Any number not included in the reserved private IP address range
+Example: 8.8.8.8.	10.0.0.0 — 10.255.255.255;
+172.16.0.0 — 172.31.255.255; 
+192.168.0.0 — 192.168.255.255
+Example: 10.11.12.13
+
+===BUILD YOUR OWN DATACENTRE IN AWS=====
+Steps:-
+1.	Create VPC --- 192.168.0.0/16 (example)
+2.	Create public subnet --- 192.168.1.0/24
+3.	Create private subnet ---192.168.2.0/24
+4.	Create Internet gateway
+5.	Create public route table and public route table
+6.	 
+Your vpc –Amazon VPC enables you to build a virtual network in the AWS cloud - no VPNs, hardware, or physical datacenters required. You can define your own network space, and control how your network and the Amazon EC2 resources inside your network are exposed to the Internet
+Your vpc create vpcgive name to vpcenter ipv4cidr  ( 192.168.0.0/16 )
+Subnets- subnets are a logical partition of an IP network into multiple, smaller network segments. The Internet Protocol (IP) is the method for sending data from one computer to another over the internet
+The instances in the public subnet can send outbound traffic directly to the internet, whereas the instances in the private subnet can't. Instead, the instances in the private subnet can access the internet by using a network address translation (NAT) gateway that resides in the public subnet.
+A private subnet sets that route to a NAT instance. Private subnet instances only need a private ip and internet traffic is routed through the NAT in the public subnet. You could also have no route to 0.0.0.0/0 to make it a truly private subnet with no internet access in or out.
+A public subnet routes 0.0.0.0/0 through an Internet Gateway (igw). Instances in a public subnet require public IPs to talk to the internet.
+Why Public Subnet The resources in the public subnet can send outbound traffic directly to the Internet and vice versa. For example web server needs to be accessed by users from the internet.   
+Why Private Subnet Resources like database may require connection to internet for updates/patches but should not be accepting request from the internet. In such cases a private subnet is to be used.
+
+subnet-create subnetselect ur craetedvpcenter subnet name(public/private) ipv4cidr  ( 192.168.1.0/24 )
+subnets-create subnetselect ur craetedvpcenter subnet name(public/private) ipv4cidr  ( 192.168.2.0/24 ( here not same to the above ip)
+internet gateway:An Internet gateway can transfer communications between an enterprise network and the Internet
+ local gateway- serves two purposes. It provides a target in your VPC route tables for on-premises destined traffic, and it performs network address translation (NAT) for instances that have been assigned addresses from your customer-owned IP pool. NAT Gateway
+NAT Gateway (NGW) is a managed Network Address Translation (NAT) service.
+NAT Gateway does something similar to Internet Gateway (IGW), but it only works one way: Instances in a private subnet can connect to services outside your VPC but external services cannot initiate a connection with those instances.
+NAT gateways are supported for IPv4 or IPv6 traffic.
+NAT gateway supports the following protocols: TCP, UDP, and ICMP.
+Each NAT gateway is created in a specific Availability Zone and implemented with redundancy in that zone.create internet gatewayenter name-create- ( after creation of gateway,,,that gateway attach to your vpc…..
+Route table: A routing table contains the information necessary to forward a packet along the best path toward its destination. Each packet contains information about its origin and destination. Routing Table provides the device with instructions for sending the packet to the next hop on its route across the network
+Route tablecreatename with publicselect vpccreate route table
+Route table:createname with  privateselect vpccreate route table
+To attach route table to subnets (public and private) - select routeactions-edit subnet assoctionsselect subnetsave association
+To attach route table to subnets (public and private) - select routeactions-edit subnet assoctionsselect subnetsave association
+Route tableselect  public routeedit routeadd route-destination  0.0.0.0/0target (ex-internet gateway)-save changes
+======================================================================
+REMOVE YOUR OWN DATACENTRE IN AWS:: 
+
+1.	First terminate your ec-2 instances[ private& public]
+2.	Detech your gateway 
+3.	Delete VPC
+Now go to ec2 instatances  ;
+Launch instancename as a publicchoose ami(default)choose instance type(default)-configure instancenetwork choose your vpc(reddi is my vpc)subnet select public subnet Auto-assign Public IP choose enable review and launch
+
+Launch instancename as a privatechoose ami(default)choose instance type(default)-configure instancenetwork choose your vpc(reddi is my vpc)subnet select private subnet Auto-assign Public IP choose disable review and launch
+
+Login with your public instance-sudo su –
+ Commndamazon-linux-extras list
+$ amazon-linux-extras install epel ( this is for install third party packages)
+$ yum install putty
+Now we need pem key for connect private insatance….go to your ppk key ..select with note pad then select all and copy…then open  ur putty
+$ vi ppk.key-here paste ur ppk key
+$ puttygen  ppk.key  -O private-openssh -o pem.key - here we ppk key converted to pem key
+$ ssh -i aws.pem ec2-user@private ip( ur private instance)
+Now opened ur private ip
+==========================================================================
+          ==EMAIL NOTIFICATION ALERT===
+ All servicessimple notification service[SNC]Topicscreate topic-select standardgive topic name(example:Prasad cpu)click on create topic
+Simple notification service(snc)-subscriptionscreate subscription-select topic name(which you give previsouly in topic)protocol(in this select email)end point (here u give ur email)click on create subscription---> Aws sends one mail notification to ur given mail-open ur mailclick confirm subcrption
+Before email subcrption u see like this in ur snc subscription 
+Pending confirmation	Prasadreddi72@gmail.com	 Pending confirmation	EMAIL	prasad-cpu
+
+
+ After email subcription u see like this in ur snc subscription
+0375b493-1499-4a51-83f6-8a5b4d2ff3c6
+prasadreddi2@gmail.com	 Confirmed	EMAIL	prasad-cpu
+
+
+				
+Then go to all services-cloud watch
+Cloud watch-alarms-all alarmscreate alrmselect metric-click on ec2 Per-Instance Metricscopy instance id (go to ur instances then copy ur instance id)select metric name as a cpu utilization-click on select metricnow open specify metric and conditions Conditions Whenever CPUUtilization isselect Greater/Equal Define the threshold value( here u give ur maximum  limit of cpu utilization percentage) Additional configuration- Datapoints to alarm  (Define the number of datapoints within the evaluation period that must be breaching to cause the alarm to go to ALARM state. It means u give 1:1 when ur maxlimit trigger within time at one time then alrm sends u notuification to ur mail……..in case u give 2:5  alrms checks 5 times cpu utilization in that 5 times cpu utilization triggers max limit at 2 times then alrm sends u mail )--click on next-notification-click on selct on mail list (her shows u metric name select that)click on next- Add name and description Alarm name (cpu utilize) Alarm description – optional ( here just write cpu utilization reaches max limit)-click on nextclck on create alarm
+Now go to putty-cmnd- top ( it shows ur cpu utilization %)- cmd; stress ( stress the ur instance cpu utilization) Example: stress --cpu 8 --io 4 --vm 2 --vm-bytes 128M --timeout 10000000000stop cmnd-here shows ur reaches ur max limit-now alrm sends u notication to ur mail
+
+
+=========================================================================================
+
+
+                                                JENKINS WORKER NODE AND SLAVE NODE 
+Ideally, the machine where we install standard Jenkins will be our Jenkins master. On the slave node machine, we will install a runtime program called Agent. Installing Agent will not be a standard Jenkins install, but this Agent will run on the JVM. It is capable enough to run the subtask or main task of Jenkins in a dedicated executor:
+ 
+We can have any number of Agent nodes or slave nodes. Further, we can configure the master node to decide which task or job should run on which agent and how many executor agents we can have. The communication between master and Jenkins slave nodes is bi-directional and takes place over TCP/IP.
+3. Configuring Jenkins Master and Slave Nodes
+The standard Jenkins installation includes Jenkins master, and in this setup, the master will be managing all our build system's tasks. If we're working on a number of projects, we can run numerous jobs on each one. Some projects require the use of specific nodes, which necessitates the use of slave nodes.
+The Jenkins master is in charge of scheduling jobs, assigning slave nodes, and sending builds to slave nodes for execution. It will also keep track of the slave node state (offline or online), retrieve build results from slave nodes, and display them on the terminal output. In most installations, multiple slave nodes will be assigned to the task of building jobs.
+Before we get started, let's double-check that we have all of the prerequisites in place for adding a slave node:
+•	Jenkins Server is up and running and ready to use
+•	Another server for a slave node configuration
+•	The Jenkins server and the slave server are both connected to the same network
+To configure the Master server, we'll log in to the Jenkins server and follow the steps below.
+First, we'll go to “Manage Jenkins -> Manage Nodes -> New Node” to create a new node: 
+On the next screen, we enter the “Node Name” (slaveNode1), select “Permanent Agent”, then click “OK”:
+ 
+After clicking “OK”, we'll be taken to a screen with a new form where we need to fill out the slave node's information. We're considering the slave node to be running on Linux operating systems, hence the launch method is set to “Launch agents via ssh”.
+In the same way, we'll add relevant details, such as the name, description, and a number of executors.
+We'll save our work by pressing the “Save” button. The “Labels” with the name “slaveNode1” will help us to set up jobs on this slave node:
+ 
+4. Building the Project on Slave Nodes
+Now that our master and slave nodes are ready, we'll discuss the steps for building the project on the slave node.
+For this, we start by clicking “New Item” in the top left corner of the dashboard.
+Next, we need to enter the name of our project in the “Enter an item name” field and select the “Pipeline project”, and then click the “OK” button.
+On the next screen, we'll enter a “Description” (optional) and navigate to the “Pipeline” section. Make sure the “Definition” field has the Pipeline script option selected.
+After this, we copy and paste the following declarative Pipeline script into a “script” field:
+node('slaveNode1'){
+    stage('Build') {
+        sh '''echo build steps'''
+    }
+    stage('Test') {
+        sh '''echo test steps'''
+    }
+}
+Next, we click on the “Save” button. This will redirect to the Pipeline view page.
+On the left pane, we click the “Build Now” button to execute our Pipeline. After Pipeline execution is completed, we'll see the Pipeline view:
+ 
+We can verify the history of the executed build under the Build History by clicking the build number. As shown above, when we click on the build number and select “Console Output”, we can see that the pipeline ran on our slaveNode1 machine.
+
+                                                    TERRAFORM
+Prerequisites
+To follow this tutorial you will need:
+•	The Terraform CLI (1.2.0+) installed.
+•	The AWS CLI installed.
+•	AWS account and associated credentials that allow you to create resources.
+To use your IAM credentials to authenticate the Terraform AWS provider, set the AWS_ACCESS_KEY_ID environment variable.
+$ export AWS_ACCESS_KEY_ID=
+Copy
+Now, set your secret key.
+$ export AWS_SECRET_ACCESS_KEY=
+Copy
+Tip: If you don't have access to IAM user credentials, use another authentication method described in the AWS provider documentation.
+This tutorial will provision resources that qualify under the AWS free tier. If your account does not qualify for free tier resources, we are not responsible for any charges that you may incur.
+»Write configuration
+The set of files used to describe infrastructure in Terraform is known as a Terraform configuration. You will write your first configuration to define a single AWS EC2 instance.
+Each Terraform configuration must be in its own working directory. Create a directory for your configuration.
+$ mkdir learn-terraform-aws-instance
+Change into the directory.
+$ cd learn-terraform-aws-instance
+Create a file to define your infrastructure.
+$ touch main.tf
+
+Open main.tf in your text editor, paste in the configuration below, and save the file.
+Tip: The AMI ID used in this configuration is specific to the us-west-2 region. If you would like to use a different region, see the Troubleshooting section for guidance.
+# Vi main.tf
+terraform {
+  required_providers {
+    aws = {
+      source  = "hashicorp/aws"
+      version = "~> 4.16"
+    }
+  }
+
+  required_version = ">= 1.2.0"
+}
+
+provider "aws" {
+  region  = "us-west-2"
+}
+
+resource "aws_instance" "app_server" {
+  ami           = "ami-830c94e3"
+  instance_type = "t2.micro"
+
+  tags = {
+    Name = "ExampleAppServerInstance"
+  }
+}
+This is a complete configuration that you can deploy with Terraform. The following sections review each block of this configuration in more detail.
+»Terraform Block
+The terraform {} block contains Terraform settings, including the required providers Terraform will use to provision your infrastructure. For each provider, the source attribute defines an optional hostname, a namespace, and the provider type. Terraform installs providers from the Terraform Registry by default. In this example configuration, the aws provider's source is defined as hashicorp/aws, which is shorthand for registry.terraform.io/hashicorp/aws.
+You can also set a version constraint for each provider defined in the required_providers block. The version attribute is optional, but we recommend using it to constrain the provider version so that Terraform does not install a version of the provider that does not work with your configuration. If you do not specify a provider version, Terraform will automatically download the most recent version during initialization.
+To learn more, reference the provider source documentation.
+»Providers
+The provider block configures the specified provider, in this case aws. A provider is a plugin that Terraform uses to create and manage your resources.
+You can use multiple provider blocks in your Terraform configuration to manage resources from different providers. You can even use different providers together. For example, you could pass the IP address of your AWS EC2 instance to a monitoring resource from DataDog.
+»Resources
+Use resource blocks to define components of your infrastructure. A resource might be a physical or virtual component such as an EC2 instance, or it can be a logical resource such as a Heroku application.
+Resource blocks have two strings before the block: the resource type and the resource name. In this example, the resource type is aws_instance and the name is app_server. The prefix of the type maps to the name of the provider. In the example configuration, Terraform manages the aws_instance resource with the aws provider. Together, the resource type and resource name form a unique ID for the resource. For example, the ID for your EC2 instance is aws_instance.app_server.
+Resource blocks contain arguments which you use to configure the resource. Arguments can include things like machine sizes, disk image names, or VPC IDs. Our providers reference lists the required and optional arguments for each resource. For your EC2 instance, the example configuration sets the AMI ID to an Ubuntu image, and the instance type to t2.micro, which qualifies for AWS' free tier. It also sets a tag to give the instance a name.
+»Initialize the directory
+When you create a new configuration — or check out an existing configuration from version control — you need to initialize the directory with terraform init.
+Initializing a configuration directory downloads and installs the providers defined in the configuration, which in this case is the aws provider.
+Initialize the directory.
+$ terraform init
+
+Initializing the backend...
+
+Initializing provider plugins...
+- Finding hashicorp/aws versions matching "~> 4.16"...
+- Installing hashicorp/aws v4.17.0...
+- Installed hashicorp/aws v4.17.0 (signed by HashiCorp)
+
+Terraform has created a lock file .terraform.lock.hcl to record the provider
+selections it made above. Include this file in your version control repository
+so that Terraform can guarantee to make the same selections by default when
+you run "terraform init" in the future.
+
+Terraform has been successfully initialized!
+
+You may now begin working with Terraform. Try running "terraform plan" to see
+any changes that are required for your infrastructure. All Terraform commands
+should now work.
+
+If you ever set or change modules or backend configuration for Terraform,
+rerun this command to reinitialize your working directory. If you forget, other
+commands will detect it and remind you to do so if necessary.
+Terraform downloads the aws provider and installs it in a hidden subdirectory of your current working directory, named .terraform. The terraform init command prints out which version of the provider was installed. Terraform also creates a lock file named .terraform.lock.hcl which specifies the exact provider versions used, so that you can control when you want to update the providers used for your project.
+»Format and validate the configuration
+We recommend using consistent formatting in all of your configuration files. The terraform fmt command automatically updates configurations in the current directory for readability and consistency.
+Format your configuration. Terraform will print out the names of the files it modified, if any. In this case, your configuration file was already formatted correctly, so Terraform won't return any file names.
+$ terraform fmt
+You can also make sure your configuration is syntactically valid and internally consistent by using the terraform validate command.
+Validate your configuration. The example configuration provided above is valid, so Terraform will return a success message.
+$ terraform validate
+Success! The configuration is valid.
+»Create infrastructure
+Apply the configuration now with the terraform apply command. Terraform will print output similar to what is shown below. We have truncated some of the output to save space.
+$ terraform apply
+
+Terraform used the selected providers to generate the following execution plan.
+Resource actions are indicated with the following symbols:
+  + create
+
+Terraform will perform the following actions:
+
+  # aws_instance.app_server will be created
+  + resource "aws_instance" "app_server" {
+      + ami                          = "ami-830c94e3"
+      + arn                          = (known after apply)
+##...
+
+Plan: 1 to add, 0 to change, 0 to destroy.
+
+Do you want to perform these actions?
+  Terraform will perform the actions described above.
+  Only 'yes' will be accepted to approve.
+
+  Enter a value:
+Tip: If your configuration fails to apply, you may have customized your region or removed your default VPC. Refer to the troubleshooting section at the bottom of this tutorial for help.
+Before it applies any changes, Terraform prints out the execution plan which describes the actions Terraform will take in order to change your infrastructure to match the configuration.
+The output format is similar to the diff format generated by tools such as Git. The output has a + next to aws_instance.app_server, meaning that Terraform will create this resource. Beneath that, it shows the attributes that will be set. When the value displayed is (known after apply), it means that the value will not be known until the resource is created. For example, AWS assigns Amazon Resource Names (ARNs) to instances upon creation, so Terraform cannot know the value of the arn attribute until you apply the change and the AWS provider returns that value from the AWS API.
+Terraform will now pause and wait for your approval before proceeding. If anything in the plan seems incorrect or dangerous, it is safe to abort here before Terraform modifies your infrastructure.
+In this case the plan is acceptable, so type yes at the confirmation prompt to proceed. Executing the plan will take a few minutes since Terraform waits for the EC2 instance to become available.
+  Enter a value: yes
+
+aws_instance.app_server: Creating...
+aws_instance.app_server: Still creating... [10s elapsed]
+aws_instance.app_server: Still creating... [20s elapsed]
+aws_instance.app_server: Still creating... [30s elapsed]
+aws_instance.app_server: Creation complete after 36s [id=i-01e03375ba238b384]
+
+Apply complete! Resources: 1 added, 0 changed, 0 destroyed.
+You have now created infrastructure using Terraform! Visit the EC2 console and find your new EC2 instance.
+Note: Per the aws provider block, your instance was created in the us-west-2 region. Ensure that your AWS Console is set to this region.
+»Inspect state
+When you applied your configuration, Terraform wrote data into a file called terraform.tfstate. Terraform stores the IDs and properties of the resources it manages in this file, so that it can update or destroy those resources going forward.
+The Terraform state file is the only way Terraform can track which resources it manages, and often contains sensitive information, so you must store your state file securely and restrict access to only trusted team members who need to manage your infrastructure. In production, we recommend storing your state remotely with Terraform Cloud or Terraform Enterprise. Terraform also supports several other remote backends you can use to store and manage your state.
+Inspect the current state using terraform show.
+$ terraform show
+# aws_instance.app_server:
+resource "aws_instance" "app_server" {
+    ami                          = "ami-830c94e3"
+    arn                          = "arn:aws:ec2:us-west-2:561656980159:instance/i-01e03375ba238b384"
+    associate_public_ip_address  = true
+    availability_zone            = "us-west-2c"
+    cpu_core_count               = 1
+    cpu_threads_per_core         = 1
+    disable_api_termination      = false
+    ebs_optimized                = false
+    get_password_data            = false
+    hibernation                  = false
+    id                           = "i-01e03375ba238b384"
+    instance_state               = "running"
+    instance_type                = "t2.micro"
+    ipv6_address_count           = 0
+    ipv6_addresses               = []
+    monitoring                   = false
+    primary_network_interface_id = "eni-068d850de6a4321b7"
+    private_dns                  = "ip-172-31-0-139.us-west-2.compute.internal"
+    private_ip                   = "172.31.0.139"
+    public_dns                   = "ec2-18-237-201-188.us-west-2.compute.amazonaws.com"
+    public_ip                    = "18.237.201.188"
+    secondary_private_ips        = []
+    security_groups              = [
+        "default",
+    ]
+    source_dest_check            = true
+    subnet_id                    = "subnet-31855d6c"
+    tags                         = {
+        "Name" = "ExampleAppServerInstance"
+    }
+    tenancy                      = "default"
+    vpc_security_group_ids       = [
+        "sg-0edc8a5a",
+    ]
+
+    credit_specification {
+        cpu_credits = "standard"
+    }
+
+    enclave_options {
+        enabled = false
+    }
+
+    metadata_options {
+        http_endpoint               = "enabled"
+        http_put_response_hop_limit = 1
+        http_tokens                 = "optional"
+    }
+
+    root_block_device {
+        delete_on_termination = true
+        device_name           = "/dev/sda1"
+        encrypted             = false
+        iops                  = 0
+        tags                  = {}
+        throughput            = 0
+        volume_id             = "vol-031d56cc45ea4a245"
+        volume_size           = 8
+        volume_type           = "standard"
+    }
+}
+Copy
+When Terraform created this EC2 instance, it also gathered the resource's metadata from the AWS provider and wrote the metadata to the state file. Later in this collection, you will modify your configuration to reference these values to configure other resources and output values.
+»Manually Managing State
+Terraform has a built-in command called terraform state for advanced state management. Use the list subcommand to list of the resources in your project's state.
+$ terraform state list
+aws_instance.app_server
+Copy
+»Troubleshooting
+If terraform validate was successful and your apply still failed, you may be encountering one of these common errors.
+•	If you use a region other than us-west-2, you will also need to change your ami, since AMI IDs are region-specific. Choose an AMI ID specific to your region by following these instructions, and modify main.tf with this ID. Then re-run terraform apply.
+•	If you do not have a default VPC in your AWS account in the correct region, navigate to the AWS VPC Dashboard in the web UI, create a new VPC in your region, and associate a subnet and security group to that VPC. Then add the security group ID (vpc_security_group_ids) and subnet ID (subnet_id) arguments to your aws_instance resource, and replace the values with the ones from your new security group and subnet.
+•	 resource "aws_instance" "app_server" {
+•	   ami                    = "ami-830c94e3"
+•	   instance_type          = "t2.micro"
+•	+  vpc_security_group_ids = ["sg-0077..."]
+•	+  subnet_id              = "subnet-923a..."
+•	 }
+Save the changes to main.tf, and re-run terraform apply.
+Remember to add these lines to your configuration for the rest of the tutorials in this collection. For more information, review this document from AWS on working with VPCs.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
