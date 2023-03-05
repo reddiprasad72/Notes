@@ -148,6 +148,35 @@ The Amazon CloudWatch has the following features:
 
 
 
+                          Aws
+
+Sub net : is used to divide an IP address into two parts. One part identifies the host (computer), the other part identifies the network to which it belongs. To better understand how IP addresses and subnet masks work, look at an IP address and see how it's organized.
+Ip class : An IPv4 address class is a categorical division of internet protocol addresses in IPv4-based routing. Separate IP classes are used for different types of networks. Some are used for public internet-accessible IPs and subnets, that is, those networks behind a router (as in classes A, B and C).
+Port : In computer networking, and more definitely in software terms, a port is a logical entity which acts as a endpoint of communication to identify a given application or process on an Linux operating system. It is a 16-bit number (0 to 65535) which differentiates one application from another on end systems.
+Protocol; protocol, in computer science, a set of rules or procedures for transmitting data between electronic devices, such as computers. In order for computers to exchange information, there must be a preexisting agreement as to how the information will be structured and how each side will send and receive it.
+daemon (pronounced DEE-muhn) is a program that runs continuously and exists for the purpose of handling periodic service requests that a computer system expects to receive. The daemon program forwards the requests to other programs (or processes) as appropriate.
+What is Private IP?
+
+ 
+
+What is a private IP address? 
+A private IP address is the address your network router assigns to your device. Each device within the same network is assigned a unique private IP address (sometimes called a private network address) — this is how devices on the same internal network talk to each other.
+
+What is public IP address?
+A public IP address is an IP address that can be accessed directly over the internet and is assigned to your network router by your internet service provider (ISP). Your personal device also has a private IP that remains hidden when you connect to the internet through your router's public IP.
+
+What is a private subnet?
+Instances in the private subnet are back-end servers that don't need to accept incoming traffic from the internet and therefore do not have public IP addresses; however, they can send requests to the internet using the NAT gateway (see the next bullet).
+
+What is public subnet?
+A public subnet is a subnet that's associated with a route table that has a route to an internet gateway. A private subnet with a size /24 IPv4 CIDR block (example: 10.0. 1.0/24). This provides 256 private IPv4 addresses. An internet gateway.
+
+
+
+
+
+
+
 Explain what T2 instances are?
 The T2 Instances are intended to give the ability to burst to a higher performance whenever the workload demands it and also provide a moderate baseline performance to the CPU.
 The T2 instances are General Purpose instance types and are low in cost as well. They are usually used wherever workloads do not consistently or often use the CPU
